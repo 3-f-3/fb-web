@@ -607,13 +607,16 @@ ul, ol {
   overflow: hidden;
   position: relative;
   line-height: 0;
+  max-height: 500px;
 }
 
 .about__image-placeholder img {
   width: 100%;
-  height: auto;
+  height: 100%;
   display: block;
   border-radius: var(--radius-lg);
+  object-fit: cover;
+  object-position: center 20%;
 }
 
 .about__placeholder-label {
