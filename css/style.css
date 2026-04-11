@@ -727,6 +727,15 @@ ul, ol {
   object-fit: cover;
 }
 
+.work__entry-visual--contain {
+  background: var(--bg-dark-elevated);
+  padding: var(--space-8);
+}
+
+.work__entry-visual--contain img {
+  object-fit: contain;
+}
+
 .work__entry-content {
   display: flex;
   flex-direction: column;

@@ -134,17 +134,18 @@
 
         <div class="about__media">
           <div class="about__image-placeholder reveal">
-            <span class="about__placeholder-label">Photo</span>
+            <img src="media/headshot.jpg" alt="Franco Buttice" loading="lazy">
           </div>
           <div class="about__image-placeholder about__image-placeholder--landscape reveal">
-            <span class="about__placeholder-label">Photo</span>
+            <img src="media/travel-photo.jpg" alt="Franco Buttice traveling" loading="lazy">
           </div>
         </div>
       </div>
 
       <!-- Video Placeholder -->
       <div class="about__video-placeholder reveal" id="videoPlaceholder">
-        <div class="about__video-play">
+        <video id="introVideo" src="media/intro-video.mp4" controls preload="metadata" style="width:100%;height:100%;object-fit:cover;border-radius:var(--radius-md);display:none;" playsinline></video>
+        <div class="about__video-play" id="videoPlayBtn" onclick="var v=document.getElementById('introVideo');v.style.display='block';this.style.display='none';document.querySelector('.about__video-label').style.display='none';v.play();">
           <svg width="20" height="20" viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg>
         </div>
         <span class="about__video-label">1-minute intro video</span>
@@ -164,8 +165,8 @@
 
         <!-- Reddi -->
         <div class="work__entry reveal">
-          <div class="work__entry-visual">
-            <span class="about__placeholder-label" style="color: var(--steel);">Reddi Visual</span>
+          <div class="work__entry-visual work__entry-visual--contain">
+            <img src="media/reddi.jpg" alt="Reddi app icon" loading="lazy">
           </div>
           <div class="work__entry-content">
             <p class="label work__entry-tag">Founder</p>
@@ -184,7 +185,7 @@
         <!-- Ladies Polo Cup RD -->
         <div class="work__entry reveal">
           <div class="work__entry-visual">
-            <span class="about__placeholder-label" style="color: var(--steel);">Ladies Polo Cup RD</span>
+            <img src="media/ladies-polo-cup.jpg" alt="Ladies Polo Cup Dominican Republic" loading="lazy">
           </div>
           <div class="work__entry-content">
             <p class="label work__entry-tag">Sponsorship Manager</p>
@@ -201,8 +202,8 @@
 
         <!-- Casa de Campo / Central Romana -->
         <div class="work__entry reveal">
-          <div class="work__entry-visual">
-            <span class="about__placeholder-label" style="color: var(--steel);">Casa de Campo</span>
+          <div class="work__entry-visual work__entry-visual--contain">
+            <img src="media/casa-de-campo.jpg" alt="Casa de Campo Resort & Villas" loading="lazy">
           </div>
           <div class="work__entry-content">
             <p class="label work__entry-tag">Finance Intern</p>
@@ -269,7 +270,7 @@
         <div class="blog-preview__featured reveal">
           <a href="blog.html#post-argentina" class="blog-card">
             <div class="blog-card__image">
-              <span class="about__placeholder-label" style="color: var(--steel);">Featured Image</span>
+              <img src="media/argentina-blog.jpg" alt="Argentina World Cup celebration" loading="lazy">
             </div>
             <div class="blog-card__body">
               <p class="label-sm blog-card__tag">Personal</p>
@@ -286,7 +287,7 @@
         <div class="reveal">
           <a href="blog.html#post-ai" class="blog-card blog-card--small">
             <div class="blog-card__image">
-              <span class="about__placeholder-label" style="color: var(--steel);">Image</span>
+              <img src="media/ai-blog.jpg" alt="AI and automation" loading="lazy">
             </div>
             <div class="blog-card__body">
               <p class="label-sm blog-card__tag">Technology</p>
@@ -300,7 +301,7 @@
         <div class="reveal">
           <a href="blog.html#post-italy" class="blog-card blog-card--small">
             <div class="blog-card__image">
-              <span class="about__placeholder-label" style="color: var(--steel);">Image</span>
+              <img src="media/italy-blog.jpg" alt="Franco in Italy" loading="lazy">
             </div>
             <div class="blog-card__body">
               <p class="label-sm blog-card__tag">Travel &amp; Identity</p>
